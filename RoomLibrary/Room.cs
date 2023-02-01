@@ -55,7 +55,7 @@ namespace RoomLibrary
         /// Информация о комнате
         /// </summary>
         /// <returns>Возвращает строку</returns>
-        public string Info()
+        public virtual string Info()
         {
             return $"Жилая комната площадью {RoomArea()} кв. м.";
         }
@@ -78,7 +78,7 @@ namespace RoomLibrary
         /// Информация о комнате
         /// </summary>
         /// <returns>Возвращает строку</returns>
-        public string Info()
+        public override string Info()
         {
             return $"Жилая комната площадью {RoomArea()} кв. м., с {numWin} окнами.";
         }
@@ -108,7 +108,7 @@ namespace RoomLibrary
         /// Информация о офиск
         /// </summary>
         /// <returns>Возвращает строку</returns>
-        public string Info()
+        public override string Info()
         {
             return $"Офис на {NumWorkplaces()} рабочих мест";
         }
